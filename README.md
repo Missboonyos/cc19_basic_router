@@ -13,5 +13,11 @@ git init
 git add .
 git commit -m "init"
 git push
+```
 
+### when updated code
+```bash
+git add .
+git commit -m "init"
+git push
 ```
