@@ -1,34 +1,3 @@
-## Step 1 Create project
-```bash
-npm create vite .
-npm install
-npm run dev
-```
-
-## Step 2 push project to github
-```bash
-git init
-
-
-git add .
-git commit -m "init"
-git push
-```
-
-### when updated code
-```bash
-git add .
-git commit -m "init"
-git push
-```
-
-## Step 3 install React Router
-```bash
-npm i react-router
-```
-
-```jsx
-// rfce
 import { Link, Outlet, Route, Routes } from "react-router";
 import MainNav from "../components/MainNav";
 import Layout from "../layouts/Layout";
@@ -37,6 +6,8 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Recap from "../pages/Recap";
+
 function AppRoutes() {
   return (
     <div>
@@ -48,6 +19,7 @@ function AppRoutes() {
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
+          <Route path="recap" element={<Recap />} />
         </Route>
 
         {/* Private */}
