@@ -1,4 +1,5 @@
 ## Step 1 Create project
+
 ```bash
 npm create vite .
 npm install
@@ -6,6 +7,7 @@ npm run dev
 ```
 
 ## Step 2 push project to github
+
 ```bash
 git init
 
@@ -16,6 +18,7 @@ git push
 ```
 
 ### when updated code
+
 ```bash
 git add .
 git commit -m "init"
@@ -23,6 +26,7 @@ git push
 ```
 
 ## Step 3 install React Router
+
 ```bash
 npm i react-router
 ```
@@ -44,7 +48,7 @@ function AppRoutes() {
         {/* Public */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About/>} />
+          <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
@@ -61,3 +65,22 @@ function AppRoutes() {
   );
 }
 export default AppRoutes;
+```
+
+## Step 4 Global state with Zustand
+
+```bash
+npm install zustand
+```
+
+## Step 5 Fetch data
+
+```bash
+npm install axios
+```
+
+## Use Lucide Icon
+https://lucide.dev/guide/installation
+```bash
+npm install lucide-react
+```
